@@ -23,3 +23,15 @@ Esta función es una versión simplificada de la anterior, que solicita al usuar
 
 Manejo de errores
 Utilizamos excepciones (std::runtime_error) para capturar problemas como la inexistencia del archivo, errores al abrirlo o al leerlo. Además, garantiza que el archivo se cierre adecuadamente si se produce un error antes de que se termine de leer.
+
+En el archivo integrador.h se definen dos estructuras y funciones relacionadas con la gestión de texto en la consola:
+
+ColorConsole: Contiene secuencias de escape ANSI para cambiar el color del texto y el fondo en la consola (azul para el texto, blanco para el fondo) y para resetear los colores.
+ConsoleBox: Tiene dos métodos (new_text y set_text) que probablemente se usan para manejar y mostrar texto en bloques dentro de la consola.
+Funciones load_script: Permiten cargar un script desde un archivo. Una variante recibe el nombre del archivo, y la otra solicita al usuario el nombre del archivo a cargar.
+El código está orientado a dar formato visual a la salida en la consola y gestionar el contenido de archivos de forma interactiva.
+
+Y por úlrimo en el archivo main.cpp solo se llama a la función.
+
+
+
